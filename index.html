@@ -63,39 +63,43 @@
 
             <div class="row">
                 <div class="produtos-container">
-                    <div class="produto-card">
-                        <a href="produtos/portatil.html" class="linkCard">
-                            <h3 class="produto-title">LINHA PORTÁTIL</h3>
-                            <div class="produto-divider"></div>
-                            <div class="produto-image">
-                                <img src="src/resources/img/card1.png" alt="Climatizador Linha Portátil TurboBrisa">
-                            </div>
-                        </a>
+                    <div class="produto-card" categoria="portatil">
+                        <h3 class="produto-title">LINHA PORTÁTIL</h3>
+                        <div class="produto-divider"></div>
+                        <div class="produto-image">
+                            <img src="src/resources/img/card1.png" alt="Climatizador Linha Portátil TurboBrisa">
+                        </div>
                     </div>
                     
-                    <div class="produto-card">
-                        <a href="produtos/comercial-industrial.html" class="linkCard">
-                            <h3 class="produto-title">LINHA COMERCIAL & INDUSTRIAL</h3>
-                            <div class="produto-divider"></div>
-                            <div class="produto-image">
-                                <img src="src/resources/img/card2.png" alt="Climatizador Linha Comercial e Industrial TurboBrisa">
-                            </div>
-                        </a>
+                    <div class="produto-card" categoria="comercial_industrial">
+                        <h3 class="produto-title">LINHA COMERCIAL & INDUSTRIAL</h3>
+                        <div class="produto-divider"></div>
+                        <div class="produto-image">
+                            <img src="src/resources/img/card2.png" alt="Climatizador Linha Comercial e Industrial TurboBrisa">
+                        </div>
                     </div>
                     
-                    <div class="produto-card">
-                        <a href="produtos/parede-teto.html" class="linkCard">
-                            <h3 class="produto-title">LINHA PAREDE & TETO</h3>
-                            <div class="produto-divider"></div>
-                            <div class="produto-image">
-                                <img src="src/resources/img/card3.png" alt="Climatizador Linha Parede e Teto TurboBrisa">
-                            </div>
-                        </a>
+                    <div class="produto-card" categoria="parede_teto">
+                        <h3 class="produto-title">LINHA PAREDE & TETO</h3>
+                        <div class="produto-divider"></div>
+                        <div class="produto-image">
+                            <img src="src/resources/img/card3.png" alt="Climatizador Linha Parede e Teto TurboBrisa">
+                        </div>
                     </div>
                 </div>
             </div>
 
     </section>
+
+
+    <section class="cards-produtos-section" id="cards-produtos">
+        <div class="container">
+            <div class="linha-horizontal"></div>
+            <div class="row" id="cards-produtos-container"></div>
+        </div>
+    </section>
+
+
     <section class="parceiros-section" id="parceiros">
         <h2 class="section-title" style="margin-top: 20px;">PARCEIROS</h2>
         <div class="parceiros-container">
@@ -198,7 +202,21 @@
             </div>
         </div>
     </section>
-    <script src="/script/script.js"></script>
+
+    <!-- Modal de detalhes do produto -->
+    <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="productModalBody"></div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="/script/script.js"></script>
 </body>
 </html>

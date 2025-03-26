@@ -1,0 +1,51 @@
+{
+    "portatil": 
+    [
+        { "id": 3, "nome": "Camiseta", "descricao": "Camiseta 100% algodão", "preco": "Sob Consulta" },
+        { "id": 4, "nome": "Calça Jeans", "descricao": "Calça jeans confortável", "preco": "Sob Consulta" }
+    ],
+    "comercial_industrial": 
+    [
+        { 
+          "id": 1, 
+          "nome": "Smartphone",
+          "descricao": "Smartphone de última geração",
+          "preco": "Sob Consulta",
+          "nomeArquivoImagem": "teste.png"
+        },
+        
+        { 
+          "id": 2, 
+          "nome": "Produto 123",
+          "descricao": "Smartphone de última geração",
+          "preco": "Sob Consulta",
+          "nomeArquivoImagem": "teste.png"
+        },
+        { 
+          "id": 3, 
+          "nome": "produto teste",
+          "descricao": "qwdqwdqwdqwdSmartphone de última geração",
+          "preco": "Sob Consulta",
+          "nomeArquivoImagem": "teste.png"
+        },
+        { 
+          "id": 4, 
+          "nome": "produto 45623123",
+          "descricao": "2323232323233Smartphone de última geração",
+          "preco": "Sob Consulta",
+          "nomeArquivoImagem": "teste.png"
+        },
+        { 
+          "id": 5, 
+          "nome": "produto 499",
+          "descricao": "Smartphone de última geração",
+          "preco": "Sob Consulta",
+          "nomeArquivoImagem": "teste.png"
+        }
+    ],
+    "parede_teto": 
+    [
+        { "id": 3, "nome": "Camiseta", "descricao": "Camiseta 100% algodão", "preco": "Sob Consulta" },
+        { "id": 4, "nome": "Calça Jeans", "descricao": "Calça jeans confortável", "preco": "Sob Consulta" }
+    ]
+}

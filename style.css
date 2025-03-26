@@ -1,8 +1,25 @@
+/* Carrega a fonte personalizada */
+@font-face {
+    font-family: 'Moderniz'; 
+    src: url('/src/resources/fonts/Moderniz.otf') format('opentype'); /* Caminho do arquivo */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Libre_franklin'; 
+    src: url('/src/resources/fonts/LibreFranklin-VariableFont_wght.ttf') format('truetype'); /* Caminho do arquivo */
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Libre_franklin', sans-serif;
 }
 
 .navbar {
@@ -40,8 +57,10 @@ body {
 }
 
 .logo h3{
-    font-size: 16px; 
+    margin-top: 4px;
+    font-size: 12px; 
     color: white;
+    font-family: 'Moderniz', sans-serif;
 }
 
 .nav-menu {
@@ -181,7 +200,15 @@ body {
     color: white;
     text-align: center;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s;
 }
+
+.produto-card:hover {
+    transform: scale(1.05);
+}
+
+
 
 .produto-card a {
     text-decoration: none;
@@ -217,6 +244,38 @@ body {
     max-height: 100%;
     object-fit: contain;
 }
+
+.cards-produtos-section.active {
+    max-height: 1000px; /* Ajuste conforme necessário */
+    opacity: 1;
+    padding: 20px 0;
+}
+
+.card-body{
+    background-color: #0e3b6c !important;
+    color: white !important;
+}
+
+.produto-card-interno {
+    margin-top: 20px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.produto-card-interno:hover {
+    transform: scale(1.05);
+}
+
+.border-custom {
+    border: 2px solid #0e3b6c !important;
+}
+
+.linha-horizontal{
+    background-color: #0e3b6c;
+    padding: 1px;
+    margin-bottom: 30px;
+}
+
 
 /* Responsividade */
 @media (max-width: 992px) {
