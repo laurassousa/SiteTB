@@ -150,10 +150,14 @@ body {
 }
 
 .hero-text {
-    margin-top: 2em;
+    margin-top: 50px;
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 30px;
+    background-color: #0a3058;
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid #082a4d; /* Opcional: adiciona uma borda */
 }
 
 .hero-image {
@@ -246,9 +250,10 @@ body {
 }
 
 .cards-produtos-section.active {
-    max-height: 1000px; /* Ajuste conforme necessário */
     opacity: 1;
     padding: 20px 0;
+    margin-bottom: 60px; 
+    overflow: auto; 
 }
 
 .card-body{
@@ -533,3 +538,4 @@ body {
     color: inherit;
     display: block;
 }
+

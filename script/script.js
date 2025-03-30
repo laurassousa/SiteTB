@@ -31,7 +31,7 @@ function showProducts(category) {
         const productCard = `
             <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="card produto-card-interno border-custom" style="width: 18rem;" data-product-id="${product.id}">
-                    <img src="src/resources/img/produtos/${product.nomeArquivoImagem}" class="card-img-top" alt="...">
+                    <img src="src/resources/img/produtos/${product.nomeArquivoImagem}" class="card-img-top" alt="..." style="width:300px; height: 300px; object-fit: contain;">
                     <div class="card-body">
                         <h5 class="card-title">${product.nome}</h5>
                         <p class="card-text">${product.preco}</p>
@@ -52,15 +52,21 @@ function showProducts(category) {
             const selectedProduct = products.find(p => p.id == productId);
             modalTitle.textContent = selectedProduct.nome;
             modalBody.innerHTML = `
-                <img src="src/resources/img/produtos/${selectedProduct.nomeArquivoImagem}" class="card-img-top" alt="...">
-                <p>${selectedProduct.descricao}</p>
+                <center><img src="src/resources/img/produtos/${selectedProduct.nomeArquivoImagem}" class="card-img-top" alt="..." style="margin-bottom:30px; width:300px; height: 300px; object-fit: contain;"> </center>
+                <p><strong>Vazão máxima:</strong> ${selectedProduct.vazao_maxima}</p>
+                <p><strong>Potência:</strong> ${selectedProduct.potencia}</p>
+                <p><strong>Reservatorio de água:</strong> ${selectedProduct.reservatorio_agua}</p>
+                <p><strong>Conjunto de hélices:</strong> ${selectedProduct.conjunto_helices}</p>
+                <p><strong>Dimensão total (mm):</strong> ${selectedProduct.dimensoes_total_mm}</p>
+                <p><strong>Peso sem água:</strong> ${selectedProduct.peso_sem_agua}</p>
                 <p><strong>Preço:</strong> ${selectedProduct.preco}</p>
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                <button onclick="window.location.href='https://api.whatsapp.com/send?phone=553496337574'" class="btn btn-success" style="margin-top:30px">Faça seu orçamento</button>
             `;
             modal.show();
         });
     });
 }
+
 
 // Eventos dos cards de categoria
 categoryCards.forEach(card => {
