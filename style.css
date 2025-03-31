@@ -1,14 +1,14 @@
 /* Carrega a fonte personalizada */
 @font-face {
     font-family: 'Moderniz'; 
-    src: url('/src/resources/fonts/Moderniz.otf') format('opentype'); /* Caminho do arquivo */
+    src: url('src/resources/fonts/Moderniz.otf') format('opentype'); /* Caminho do arquivo */
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Libre_franklin'; 
-    src: url('/src/resources/fonts/LibreFranklin-VariableFont_wght.ttf') format('truetype'); /* Caminho do arquivo */
+    src: url('src/resources/fonts/LibreFranklin-VariableFont_wght.ttf') format('truetype'); /* Caminho do arquivo */
     font-weight: normal;
     font-style: normal;
 }
