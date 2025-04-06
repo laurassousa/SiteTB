@@ -13,12 +13,7 @@ let categoriesData = {};
 // Função para carregar o JSON
 async function loadCategoriesData() {
     try {
-        let basePath = window.location.pathname;
-if (basePath.endsWith('/')) {
-  basePath = basePath.slice(0, -1);
-}
-const response = await fetch(${basePath}/src/resources/dados_produtos.json);
-
+        const response = await fetch('script/dados_produtos.json');
         if (!response.ok) throw new Error('Erro ao carregar o arquivo JSON');
         categoriesData = await response.json();
         
